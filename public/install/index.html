@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <title>
+  Installation Guide · NicolNavi
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="NicolNavi">
+<meta name="description" content="
+  NicolNavi Installation Guide
+  
+    
+    Link to heading
+  
+
+This guide walks you through getting NicolNavi up and running. You can either rely on Docker for a managed setup or run the app directly in a Python environment. Review the checklist below before you start.
+
+  Before You Begin
+  
+    
+    Link to heading
+  
+
+
+Supported systems: Windows 10 (64-bit) or later, macOS Monterey (12) or later, and popular Linux distributions
+Permissions: Administrator rights may be required during the initial setup
+Browser: Latest Google Chrome (recommended)
+Memory: 16 GB RAM or more is strongly recommended; lower-spec systems may not run reliably
+
+
+  
+    Info
+  
+  Other browsers might work, but only Google Chrome is officially verified.
+
+
+
+  Picking an Approach
+  
+    
+    Link to heading
+  
+
+
+Use the Docker setup when you want a standardized environment with minimal manual configuration.
+Use the Python workflow if you prefer to manage dependencies yourself or plan to extend the codebase.
+
+Choose one path and follow it through to the end.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Installation Guide">
+  <meta name="twitter:description" content="NicolNavi Installation Guide Link to heading This guide walks you through getting NicolNavi up and running. You can either rely on Docker for a managed setup or run the app directly in a Python environment. Review the checklist below before you start.
+Before You Begin Link to heading Supported systems: Windows 10 (64-bit) or later, macOS Monterey (12) or later, and popular Linux distributions Permissions: Administrator rights may be required during the initial setup Browser: Latest Google Chrome (recommended) Memory: 16 GB RAM or more is strongly recommended; lower-spec systems may not run reliably Info Other browsers might work, but only Google Chrome is officially verified. Picking an Approach Link to heading Use the Docker setup when you want a standardized environment with minimal manual configuration. Use the Python workflow if you prefer to manage dependencies yourself or plan to extend the codebase. Choose one path and follow it through to the end.">
+
+<meta property="og:url" content="http://localhost:1313/install/">
+  <meta property="og:site_name" content="NicolNavi">
+  <meta property="og:title" content="Installation Guide">
+  <meta property="og:description" content="NicolNavi Installation Guide Link to heading This guide walks you through getting NicolNavi up and running. You can either rely on Docker for a managed setup or run the app directly in a Python environment. Review the checklist below before you start.
+Before You Begin Link to heading Supported systems: Windows 10 (64-bit) or later, macOS Monterey (12) or later, and popular Linux distributions Permissions: Administrator rights may be required during the initial setup Browser: Latest Google Chrome (recommended) Memory: 16 GB RAM or more is strongly recommended; lower-spec systems may not run reliably Info Other browsers might work, but only Google Chrome is officially verified. Picking an Approach Link to heading Use the Docker setup when you want a standardized environment with minimal manual configuration. Use the Python workflow if you prefer to manage dependencies yourself or plan to extend the codebase. Choose one path and follow it through to the end.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2025-10-15T13:10:14+09:00">
+    <meta property="article:modified_time" content="2025-10-15T13:10:14+09:00">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/install/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      NicolNavi
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/install/">Install</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/acquisition/">Data Acquisition</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/tutorial/">Tutorial</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/ja/install/">JA</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/install/">
+          Installation Guide
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="nicolnavi-installation-guide">
+  NicolNavi Installation Guide
+  <a class="heading-link" href="#nicolnavi-installation-guide">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>This guide walks you through getting NicolNavi up and running. You can either rely on Docker for a managed setup or run the app directly in a Python environment. Review the checklist below before you start.</p>
+<h2 id="before-you-begin">
+  Before You Begin
+  <a class="heading-link" href="#before-you-begin">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>Supported systems: Windows 10 (64-bit) or later, macOS Monterey (12) or later, and popular Linux distributions</li>
+<li>Permissions: Administrator rights may be required during the initial setup</li>
+<li>Browser: Latest Google Chrome (recommended)</li>
+<li>Memory: 16 GB RAM or more is strongly recommended; lower-spec systems may not run reliably</li>
+</ul>
+<div class="notice info">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-circle" aria-hidden="true"></i>Info
+  </div>
+  <div class="notice-content">Other browsers might work, but only Google Chrome is officially verified.</div>
+</div>
+
+<h2 id="picking-an-approach">
+  Picking an Approach
+  <a class="heading-link" href="#picking-an-approach">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><strong>Use the Docker setup</strong> when you want a standardized environment with minimal manual configuration.</li>
+<li><strong>Use the Python workflow</strong> if you prefer to manage dependencies yourself or plan to extend the codebase.</li>
+</ul>
+<p>Choose one path and follow it through to the end.</p>
+<hr>
+<h2 id="installing-with-docker">
+  Installing with Docker
+  <a class="heading-link" href="#installing-with-docker">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="step-1-prepare-required-software">
+  Step 1. Prepare Required Software
+  <a class="heading-link" href="#step-1-prepare-required-software">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li><strong>Install Google Chrome (if needed)</strong><br>
+Download the latest installer from <a href="https://www.google.com/chrome/"  class="external-link" target="_blank" rel="noopener">https://www.google.com/chrome/</a> and follow the prompts.</li>
+<li><strong>Install Docker Desktop</strong><br>
+Visit <a href="https://www.docker.com/ja-jp/get-started/"  class="external-link" target="_blank" rel="noopener">https://www.docker.com/ja-jp/get-started/</a>, download <code>Docker Desktop Installer.exe</code> for Windows or <code>Docker.dmg</code> for macOS, and complete the installer. When you see “Installation succeeded,” select “Close and log out,” then reboot your computer. On restart, Docker Desktop launches automatically—accept the license agreement when prompted. Signing in is optional.</li>
+</ol>
+<div class="notice info">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-circle" aria-hidden="true"></i>Info
+  </div>
+  <div class="notice-content">Windows users may be asked to enable or update WSL2. Follow the on-screen instructions, reboot if requested, and open Docker Desktop again.</div>
+</div>
+
+<h3 id="step-2-download-nicolnavi">
+  Step 2. Download NicolNavi
+  <a class="heading-link" href="#step-2-download-nicolnavi">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li>Open the repository at <a href="https://github.com/Tan-Furukawa/nicolnavi"  class="external-link" target="_blank" rel="noopener">https://github.com/Tan-Furukawa/nicolnavi</a>.</li>
+<li>Click <code>Download ZIP</code>, save the archive, and extract it to a convenient location.</li>
+</ol>
+<p><img src="/images/page/install/install_github.png" alt="Download from GitHub"></p>
+<h3 id="step-3-start-docker-desktop">
+  Step 3. Start Docker Desktop
+  <a class="heading-link" href="#step-3-start-docker-desktop">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li>Launch Docker Desktop manually so it is running in the background.</li>
+</ol>
+<div class="notice warning">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Warning
+  </div>
+  <div class="notice-content">If Docker Desktop is stopped, the setup scripts cannot prepare the environment. Confirm that the whale icon appears in the task tray (Windows) or menu bar (macOS) and that the status reads <code>Docker Desktop is running</code>.</div>
+</div>
+
+<h3 id="step-4-run-the-installer-script">
+  Step 4. Run the Installer Script
+  <a class="heading-link" href="#step-4-run-the-installer-script">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li>In the extracted NicolNavi folder, double-click the script that matches your operating system:
+<ul>
+<li>Windows: <code>win_nicolnavi_install.bat</code></li>
+<li>macOS / Linux: <code>mac_nicolnavi_install.sh</code></li>
+</ul>
+</li>
+<li>A terminal window opens and downloads everything the app needs. When the window reports completion, you can close it.</li>
+</ol>
+<div class="notice info">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-circle" aria-hidden="true"></i>Info
+  </div>
+  <div class="notice-content">If macOS or Linux shows a permission warning, open a terminal in the same folder, run <code>chmod +x mac_nicolnavi_install.sh</code>, and then launch the script again.</div>
+</div>
+
+<h3 id="step-5-verify-the-launch">
+  Step 5. Verify the Launch
+  <a class="heading-link" href="#step-5-verify-the-launch">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li>From the same folder, start the application with the appropriate script:
+<ul>
+<li>Windows: <code>win_nicolnavi_exe.bat</code></li>
+<li>macOS / Linux: <code>mac_nicolnavi_exe.sh</code></li>
+</ul>
+</li>
+<li>Open Google Chrome and visit <code>http://localhost:8551/</code>. If you see the NicolNavi interface, the setup is complete.</li>
+</ol>
+<div class="notice info">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-circle" aria-hidden="true"></i>Info
+  </div>
+  <div class="notice-content">You must run the launch script before visiting <code>http://localhost:8551/</code>; otherwise the page will not load.</div>
+</div>
+
+<div class="notice info">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-circle" aria-hidden="true"></i>Info
+  </div>
+  <div class="notice-content">NicolNavi runs locally inside the Docker environment, so you can keep using it even when offline.</div>
+</div>
+
+<hr>
+<h2 id="installing-with-a-python-environment">
+  Installing with a Python Environment
+  <a class="heading-link" href="#installing-with-a-python-environment">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="step-1-confirm-prerequisites">
+  Step 1. Confirm Prerequisites
+  <a class="heading-link" href="#step-1-confirm-prerequisites">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li><strong>Google Chrome</strong><br>
+Install it from the link above if you have not already.</li>
+<li><strong>Python and pipenv</strong><br>
+Ensure Python 3.10 or newer is installed and that the <code>pip</code> command works. Update pip with <code>pip install --upgrade pip</code>, then install pipenv using <code>pip install pipenv</code>.</li>
+</ol>
+<h3 id="step-2-download-nicolnavi-1">
+  Step 2. Download NicolNavi
+  <a class="heading-link" href="#step-2-download-nicolnavi-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li>Grab the ZIP archive from <a href="https://github.com/Tan-Furukawa/nicolnavi"  class="external-link" target="_blank" rel="noopener">https://github.com/Tan-Furukawa/nicolnavi</a> and extract it.</li>
+<li>Open a terminal and move into the project directory.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /path/to/nicolnavi
+</span></span></code></pre></div><h3 id="step-3-set-up-the-virtual-environment">
+  Step 3. Set Up the Virtual Environment
+  <a class="heading-link" href="#step-3-set-up-the-virtual-environment">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li>Run the following commands to create and populate a pipenv environment:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pipenv shell
+</span></span><span style="display:flex;"><span>pipenv install
+</span></span></code></pre></div><ol start="2">
+<li>Wait for <code>Pipfile.lock</code> to be generated and dependency installation to finish.</li>
+</ol>
+<div class="notice info">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-circle" aria-hidden="true"></i>Info
+  </div>
+  <div class="notice-content">The prompt should show the virtual environment name—typically something like <code>(nicolnavi)</code>. Type <code>exit</code> to leave the environment when you are done.</div>
+</div>
+
+<h3 id="step-4-launch-the-application">
+  Step 4. Launch the Application
+  <a class="heading-link" href="#step-4-launch-the-application">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li>With the pipenv shell still active, start the UI:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python gui/src/main.py
+</span></span></code></pre></div><ol start="2">
+<li>Open Google Chrome and go to <code>http://localhost:8551/</code> to confirm that NicolNavi loads.</li>
+</ol>
+<hr>
+<h2 id="troubleshooting">
+  Troubleshooting
+  <a class="heading-link" href="#troubleshooting">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><strong>Nothing loads in the browser</strong>: Make sure the launch script or <code>python gui/src/main.py</code> is still running. Restart it if necessary.</li>
+<li><strong>Port 8551 already in use</strong>: Another application is occupying the port. Stop that application or adjust NicolNavi’s port setting.</li>
+<li><strong>Docker downloads stall</strong>: Check your internet connection. In corporate networks, confirm that Docker Desktop is configured with your proxy settings.</li>
+<li><strong><code>pipenv install</code> fails</strong>: Run <code>pipenv --rm</code> to remove the environment and repeat Step 3.</li>
+</ul>
+<p>If you encounter issues you cannot resolve, note any error messages and contact the development team for assistance.</p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     NicolNavi 
+    ·
+    
+    Powered by 
+    Tan Furukawa
+    
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

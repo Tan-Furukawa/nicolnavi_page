@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <title>
+  NicolNavi インストールガイド · NicolNavi
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="NicolNavi">
+<meta name="description" content="NicolNaviを安全かつ確実に導入するための手順をまとめました。ここでは「Dockerを利用する方法」と「Python環境を利用する方法」を順を追って解説します。作業前に、以下の事項を必ずご確認ください。
+
+  事前準備と前提条件
+  
+    
+    見出しへのリンク
+  
+
+
+対応OS: Windows 10 以降 (64bit)、macOS 12 Monterey 以降、主な Linux ディストリビューション
+管理者権限: 初回インストール時に要求される場合があります
+ブラウザ: Google Chrome 最新版 (推奨)
+メモリ16GB以上のPCを強く推奨します。それ以下のPCでは、正常に機能しない可能性があります。
+
+
+  
+    Info
+  
+  Google Chrome 以外のブラウザでも動作する可能性はありますが、検証済みではありません。
+
+
+
+  導入方法の選び方
+  
+    
+    見出しへのリンク
+  
+
+
+Docker を利用: 自動で必要な Docker 環境を構築します。環境差異を避けたい場合に最適です。
+Python を利用: 既存の Python 環境を活用したい、またはスクリプトを直接実行したい方に向いています。
+
+どちらか一方の手順を選び、完了するまで順番に進めてください。
+
+
+  Docker を利用したインストール
+  
+    
+    見出しへのリンク
+  
+
+
+  Step 1. 必要ソフトのインストール
+  
+    
+    見出しへのリンク
+  
+
+
+Google Chrome の導入 (未インストールの場合)
+
+https://www.google.com/intl/ja_jp/chrome/ から最新のインストーラを入手し、画面の案内に従ってインストールします。
+
+
+Docker Desktop のインストール
+
+https://www.docker.com/ja-jp/get-started/ から、お使いのOSに合わせて Docker Desktop Installer.exe (Windows) または Docker.dmg (Mac) をダウンロードします。
+インストーラの指示に従い、「Installation succeeded」が表示されるまで進めてください。完了後は「Close and log out」をクリックし、PCを再起動します。
+再起動後に Docker Desktop が自動的に起動し、利用規約が表示されたら「Accept」を押します。サインインは任意です。
+
+
+
+
+  
+    Info
+  
+  WindowsではWSL2の有効化や更新を求められる場合があります。Docker Desktopが指示する手順に従い、完了後に再度起動してください。
+
+
+
+  Step 2. NicolNavi の取得
+  
+    
+    見出しへのリンク
+  
+
+
+GitHub リポジトリ (https://github.com/Tan-Furukawa/nicolnavi) を開き、Download ZIP を選択します。
+ダウンロードした ZIP ファイルを任意のフォルダに展開し、内容一式を保持します。
+
+">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NicolNavi インストールガイド">
+  <meta name="twitter:description" content="NicolNaviを安全かつ確実に導入するための手順をまとめました。ここでは「Dockerを利用する方法」と「Python環境を利用する方法」を順を追って解説します。作業前に、以下の事項を必ずご確認ください。
+事前準備と前提条件 見出しへのリンク 対応OS: Windows 10 以降 (64bit)、macOS 12 Monterey 以降、主な Linux ディストリビューション 管理者権限: 初回インストール時に要求される場合があります ブラウザ: Google Chrome 最新版 (推奨) メモリ16GB以上のPCを強く推奨します。それ以下のPCでは、正常に機能しない可能性があります。 Info Google Chrome 以外のブラウザでも動作する可能性はありますが、検証済みではありません。 導入方法の選び方 見出しへのリンク Docker を利用: 自動で必要な Docker 環境を構築します。環境差異を避けたい場合に最適です。 Python を利用: 既存の Python 環境を活用したい、またはスクリプトを直接実行したい方に向いています。 どちらか一方の手順を選び、完了するまで順番に進めてください。
+Docker を利用したインストール 見出しへのリンク Step 1. 必要ソフトのインストール 見出しへのリンク Google Chrome の導入 (未インストールの場合) https://www.google.com/intl/ja_jp/chrome/ から最新のインストーラを入手し、画面の案内に従ってインストールします。 Docker Desktop のインストール https://www.docker.com/ja-jp/get-started/ から、お使いのOSに合わせて Docker Desktop Installer.exe (Windows) または Docker.dmg (Mac) をダウンロードします。 インストーラの指示に従い、「Installation succeeded」が表示されるまで進めてください。完了後は「Close and log out」をクリックし、PCを再起動します。 再起動後に Docker Desktop が自動的に起動し、利用規約が表示されたら「Accept」を押します。サインインは任意です。 Info WindowsではWSL2の有効化や更新を求められる場合があります。Docker Desktopが指示する手順に従い、完了後に再度起動してください。 Step 2. NicolNavi の取得 見出しへのリンク GitHub リポジトリ (https://github.com/Tan-Furukawa/nicolnavi) を開き、Download ZIP を選択します。 ダウンロードした ZIP ファイルを任意のフォルダに展開し、内容一式を保持します。">
+
+<meta property="og:url" content="http://localhost:1313/ja/install/">
+  <meta property="og:site_name" content="NicolNavi">
+  <meta property="og:title" content="NicolNavi インストールガイド">
+  <meta property="og:description" content="NicolNaviを安全かつ確実に導入するための手順をまとめました。ここでは「Dockerを利用する方法」と「Python環境を利用する方法」を順を追って解説します。作業前に、以下の事項を必ずご確認ください。
+事前準備と前提条件 見出しへのリンク 対応OS: Windows 10 以降 (64bit)、macOS 12 Monterey 以降、主な Linux ディストリビューション 管理者権限: 初回インストール時に要求される場合があります ブラウザ: Google Chrome 最新版 (推奨) メモリ16GB以上のPCを強く推奨します。それ以下のPCでは、正常に機能しない可能性があります。 Info Google Chrome 以外のブラウザでも動作する可能性はありますが、検証済みではありません。 導入方法の選び方 見出しへのリンク Docker を利用: 自動で必要な Docker 環境を構築します。環境差異を避けたい場合に最適です。 Python を利用: 既存の Python 環境を活用したい、またはスクリプトを直接実行したい方に向いています。 どちらか一方の手順を選び、完了するまで順番に進めてください。
+Docker を利用したインストール 見出しへのリンク Step 1. 必要ソフトのインストール 見出しへのリンク Google Chrome の導入 (未インストールの場合) https://www.google.com/intl/ja_jp/chrome/ から最新のインストーラを入手し、画面の案内に従ってインストールします。 Docker Desktop のインストール https://www.docker.com/ja-jp/get-started/ から、お使いのOSに合わせて Docker Desktop Installer.exe (Windows) または Docker.dmg (Mac) をダウンロードします。 インストーラの指示に従い、「Installation succeeded」が表示されるまで進めてください。完了後は「Close and log out」をクリックし、PCを再起動します。 再起動後に Docker Desktop が自動的に起動し、利用規約が表示されたら「Accept」を押します。サインインは任意です。 Info WindowsではWSL2の有効化や更新を求められる場合があります。Docker Desktopが指示する手順に従い、完了後に再度起動してください。 Step 2. NicolNavi の取得 見出しへのリンク GitHub リポジトリ (https://github.com/Tan-Furukawa/nicolnavi) を開き、Download ZIP を選択します。 ダウンロードした ZIP ファイルを任意のフォルダに展開し、内容一式を保持します。">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2025-10-15T13:10:14+09:00">
+    <meta property="article:modified_time" content="2025-10-15T13:10:14+09:00">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/ja/install/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/ja/">
+      NicolNavi
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/ja/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/ja/install/">Install</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/ja/acquisition/">Data Acquisition</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/ja/tutorial/">Tutorial</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/install/">EN</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/ja/install/">
+          NicolNavi インストールガイド
+        </a>
+      </h1>
+    </header>
+
+    <p>NicolNaviを安全かつ確実に導入するための手順をまとめました。ここでは「Dockerを利用する方法」と「Python環境を利用する方法」を順を追って解説します。作業前に、以下の事項を必ずご確認ください。</p>
+<h2 id="事前準備と前提条件">
+  事前準備と前提条件
+  <a class="heading-link" href="#%e4%ba%8b%e5%89%8d%e6%ba%96%e5%82%99%e3%81%a8%e5%89%8d%e6%8f%90%e6%9d%a1%e4%bb%b6">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h2>
+<ul>
+<li>対応OS: Windows 10 以降 (64bit)、macOS 12 Monterey 以降、主な Linux ディストリビューション</li>
+<li>管理者権限: 初回インストール時に要求される場合があります</li>
+<li>ブラウザ: Google Chrome 最新版 (推奨)</li>
+<li>メモリ16GB以上のPCを強く推奨します。それ以下のPCでは、正常に機能しない可能性があります。</li>
+</ul>
+<div class="notice info">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-circle" aria-hidden="true"></i>Info
+  </div>
+  <div class="notice-content">Google Chrome 以外のブラウザでも動作する可能性はありますが、検証済みではありません。</div>
+</div>
+
+<h2 id="導入方法の選び方">
+  導入方法の選び方
+  <a class="heading-link" href="#%e5%b0%8e%e5%85%a5%e6%96%b9%e6%b3%95%e3%81%ae%e9%81%b8%e3%81%b3%e6%96%b9">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h2>
+<ul>
+<li><strong>Docker を利用</strong>: 自動で必要な Docker 環境を構築します。環境差異を避けたい場合に最適です。</li>
+<li><strong>Python を利用</strong>: 既存の Python 環境を活用したい、またはスクリプトを直接実行したい方に向いています。</li>
+</ul>
+<p>どちらか一方の手順を選び、完了するまで順番に進めてください。</p>
+<hr>
+<h2 id="docker-を利用したインストール">
+  Docker を利用したインストール
+  <a class="heading-link" href="#docker-%e3%82%92%e5%88%a9%e7%94%a8%e3%81%97%e3%81%9f%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h2>
+<h3 id="step-1-必要ソフトのインストール">
+  Step 1. 必要ソフトのインストール
+  <a class="heading-link" href="#step-1-%e5%bf%85%e8%a6%81%e3%82%bd%e3%83%95%e3%83%88%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li><strong>Google Chrome の導入 (未インストールの場合)</strong>
+<ul>
+<li><a href="https://www.google.com/intl/ja_jp/chrome/"  class="external-link" target="_blank" rel="noopener">https://www.google.com/intl/ja_jp/chrome/</a> から最新のインストーラを入手し、画面の案内に従ってインストールします。</li>
+</ul>
+</li>
+<li><strong>Docker Desktop のインストール</strong>
+<ul>
+<li><a href="https://www.docker.com/ja-jp/get-started/"  class="external-link" target="_blank" rel="noopener">https://www.docker.com/ja-jp/get-started/</a> から、お使いのOSに合わせて <code>Docker Desktop Installer.exe</code> (Windows) または <code>Docker.dmg</code> (Mac) をダウンロードします。</li>
+<li>インストーラの指示に従い、「Installation succeeded」が表示されるまで進めてください。完了後は「Close and log out」をクリックし、PCを再起動します。</li>
+<li>再起動後に Docker Desktop が自動的に起動し、利用規約が表示されたら「Accept」を押します。サインインは任意です。</li>
+</ul>
+</li>
+</ol>
+<div class="notice info">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-circle" aria-hidden="true"></i>Info
+  </div>
+  <div class="notice-content">WindowsではWSL2の有効化や更新を求められる場合があります。Docker Desktopが指示する手順に従い、完了後に再度起動してください。</div>
+</div>
+
+<h3 id="step-2-nicolnavi-の取得">
+  Step 2. NicolNavi の取得
+  <a class="heading-link" href="#step-2-nicolnavi-%e3%81%ae%e5%8f%96%e5%be%97">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li>GitHub リポジトリ (<a href="https://github.com/Tan-Furukawa/nicolnavi"  class="external-link" target="_blank" rel="noopener">https://github.com/Tan-Furukawa/nicolnavi</a>) を開き、<code>Download ZIP</code> を選択します。</li>
+<li>ダウンロードした ZIP ファイルを任意のフォルダに展開し、内容一式を保持します。</li>
+</ol>
+<p><img src="/images/page/install/install_github.png" alt="GitHub ダウンロード手順"></p>
+<h3 id="step-3-docker-desktop-の起動と確認">
+  Step 3. Docker Desktop の起動と確認
+  <a class="heading-link" href="#step-3-docker-desktop-%e3%81%ae%e8%b5%b7%e5%8b%95%e3%81%a8%e7%a2%ba%e8%aa%8d">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li>Docker Desktop をダブルクリックして起動します。</li>
+</ol>
+<div class="notice warning">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Warning
+  </div>
+  <div class="notice-content">Docker Desktop が停止していると環境の準備に失敗する可能性があります。確実に起動してください。</div>
+</div>
+
+<h3 id="step-4-インストーラの実行">
+  Step 4. インストーラの実行
+  <a class="heading-link" href="#step-4-%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%a9%e3%81%ae%e5%ae%9f%e8%a1%8c">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li>展開したフォルダ内から、OSに合わせて以下のファイルをダブルクリックします。
+<ul>
+<li>Windows: <code>win_nicolnavi_install.bat</code></li>
+<li>macOS / Linux: <code>mac_nicolnavi_install.sh</code></li>
+</ul>
+</li>
+<li>端末やコマンドプロンプトが開き、必要なファイルのダウンロードと初期設定が自動で実行されます。画面の表示が完了したらウィンドウを閉じて構いません。</li>
+</ol>
+<div class="notice info">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-circle" aria-hidden="true"></i>Info
+  </div>
+  <div class="notice-content">macOS / Linuxでダブルクリックした際に実行権限エラーが出る場合は、ターミナルで <code>chmod +x mac_nicolnavi_install.sh</code> を実行してから再度試してください。</div>
+</div>
+
+<h3 id="step-5-アプリの起動確認">
+  Step 5. アプリの起動確認
+  <a class="heading-link" href="#step-5-%e3%82%a2%e3%83%97%e3%83%aa%e3%81%ae%e8%b5%b7%e5%8b%95%e7%a2%ba%e8%aa%8d">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li>同じフォルダから、OSに合わせて以下の起動スクリプトをダブルクリックします。
+<ul>
+<li>Windows: <code>win_nicolnavi_exe.bat</code></li>
+<li>macOS / Linux: <code>mac_nicolnavi_exe.sh</code></li>
+</ul>
+</li>
+<li>ブラウザで <code>http://localhost:8551/</code> にアクセスし、NicolNavi の画面が表示されればセットアップ完了です。</li>
+</ol>
+<div class="notice warning">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Warning
+  </div>
+  <div class="notice-content">起動スクリプトを先に実行していないと <code>http://localhost:8551/</code> に接続できません。必ず手順通りに実行してください。</div>
+</div>
+
+<div class="notice note">
+  <div class="notice-title">
+    <i class="fa-solid fa-sticky-note" aria-hidden="true"></i>Note
+  </div>
+  <div class="notice-content">NicolNavi はローカルの Docker 環境で動作するため、インターネットに接続していなくても閲覧できます。</div>
+</div>
+
+<hr>
+<h2 id="python-環境を利用したインストール">
+  Python 環境を利用したインストール
+  <a class="heading-link" href="#python-%e7%92%b0%e5%a2%83%e3%82%92%e5%88%a9%e7%94%a8%e3%81%97%e3%81%9f%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h2>
+<h3 id="step-1-必要ソフトの確認">
+  Step 1. 必要ソフトの確認
+  <a class="heading-link" href="#step-1-%e5%bf%85%e8%a6%81%e3%82%bd%e3%83%95%e3%83%88%e3%81%ae%e7%a2%ba%e8%aa%8d">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li><strong>Google Chrome</strong>
+<ul>
+<li>未導入の場合は前述のリンクからインストールしてください。</li>
+</ul>
+</li>
+<li><strong>Python および pipenv</strong>
+<ul>
+<li>Python 3.10 以上、<code>pip</code> コマンドがインストールされていることを確認します。</li>
+<li><code>pip install --upgrade pip</code> で pip を最新化し、<code>pip install pipenv</code> を実行して pipenv を導入します。</li>
+</ul>
+</li>
+</ol>
+<h3 id="step-2-nicolnavi-の取得-1">
+  Step 2. NicolNavi の取得
+  <a class="heading-link" href="#step-2-nicolnavi-%e3%81%ae%e5%8f%96%e5%be%97-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li>GitHub リポジトリ (<a href="https://github.com/Tan-Furukawa/nicolnavi"  class="external-link" target="_blank" rel="noopener">https://github.com/Tan-Furukawa/nicolnavi</a>) から ZIP をダウンロードし、任意のディレクトリに展開します。</li>
+<li>ターミナルを開き、展開したフォルダへ移動します。</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /path/to/nicolnavi
+</span></span></code></pre></div><h3 id="step-3-仮想環境の構築と依存関係のインストール">
+  Step 3. 仮想環境の構築と依存関係のインストール
+  <a class="heading-link" href="#step-3-%e4%bb%ae%e6%83%b3%e7%92%b0%e5%a2%83%e3%81%ae%e6%a7%8b%e7%af%89%e3%81%a8%e4%be%9d%e5%ad%98%e9%96%a2%e4%bf%82%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li>ターミナルで以下のコマンドを順に実行し、仮想環境を構築します。</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pipenv shell
+</span></span><span style="display:flex;"><span>pipenv install
+</span></span></code></pre></div><ol start="2">
+<li><code>Pipfile.lock</code> が作成され、依存パッケージのインストールが完了したら準備完了です。</li>
+</ol>
+<div class="notice info">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-circle" aria-hidden="true"></i>Info
+  </div>
+  <div class="notice-content"><code>pipenv shell</code> 実行後のプロンプトに <code>(nicolnavi)</code> などの仮想環境名が表示されることを確認してください。終了する際は <code>exit</code> と入力すると仮想環境から抜けられます。</div>
+</div>
+
+<h3 id="step-4-アプリの起動確認">
+  Step 4. アプリの起動確認
+  <a class="heading-link" href="#step-4-%e3%82%a2%e3%83%97%e3%83%aa%e3%81%ae%e8%b5%b7%e5%8b%95%e7%a2%ba%e8%aa%8d">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li>仮想環境がアクティブな状態で以下のコマンドを実行します。</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python gui/src/main.py
+</span></span></code></pre></div><ol start="2">
+<li>別途ブラウザを起動し、<code>http://localhost:8551/</code> にアクセスしてNicolNaviの画面が表示されるか確認します。</li>
+</ol>
+<hr>
+<h2 id="トラブルシューティング">
+  トラブルシューティング
+  <a class="heading-link" href="#%e3%83%88%e3%83%a9%e3%83%96%e3%83%ab%e3%82%b7%e3%83%a5%e3%83%bc%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h2>
+<ul>
+<li><strong>ブラウザで画面が表示されない</strong>: 起動スクリプトや <code>python gui/src/main.py</code> が動作中か確認し、停止している場合は再実行してください。</li>
+<li><strong>ポート 8551 が使用中と表示される</strong>: 既に別アプリが同ポートを使用中です。該当アプリを停止するか、設定ファイルでポート番号を変更してください。</li>
+<li><strong>Docker イメージの取得が進まない</strong>: ネットワーク接続を確認し、プロキシ環境では適切な設定が行われているか確認してください。</li>
+<li><strong>pipenv install で失敗する</strong>: <code>pipenv --rm</code> で仮想環境を削除し、再度 Step 3 のコマンドを実行してください。</li>
+</ul>
+<p>不明点やエラーが解決しない場合は、エラーメッセージとともに開発者へお問い合わせください。</p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     NicolNavi 
+    ·
+    
+    Powered by 
+    Tan Furukawa
+    
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

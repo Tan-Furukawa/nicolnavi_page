@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NicolNavi</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on NicolNavi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 15 Oct 2025 13:10:14 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installation Guide</title>
+      <link>http://localhost:1313/install/</link>
+      <pubDate>Wed, 15 Oct 2025 13:10:14 +0900</pubDate>
+      <guid>http://localhost:1313/install/</guid>
+      <description>&lt;h1 id=&#34;nicolnavi-installation-guide&#34;&gt;&#xA;  NicolNavi Installation Guide&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#nicolnavi-installation-guide&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;This guide walks you through getting NicolNavi up and running. You can either rely on Docker for a managed setup or run the app directly in a Python environment. Review the checklist below before you start.&lt;/p&gt;&#xA;&lt;h2 id=&#34;before-you-begin&#34;&gt;&#xA;  Before You Begin&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#before-you-begin&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Supported systems: Windows 10 (64-bit) or later, macOS Monterey (12) or later, and popular Linux distributions&lt;/li&gt;&#xA;&lt;li&gt;Permissions: Administrator rights may be required during the initial setup&lt;/li&gt;&#xA;&lt;li&gt;Browser: Latest Google Chrome (recommended)&lt;/li&gt;&#xA;&lt;li&gt;Memory: 16 GB RAM or more is strongly recommended; lower-spec systems may not run reliably&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;notice info&#34;&gt;&#xA;  &lt;div class=&#34;notice-title&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-exclamation-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;Info&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;notice-content&#34;&gt;Other browsers might work, but only Google Chrome is officially verified.&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;picking-an-approach&#34;&gt;&#xA;  Picking an Approach&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#picking-an-approach&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Use the Docker setup&lt;/strong&gt; when you want a standardized environment with minimal manual configuration.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Use the Python workflow&lt;/strong&gt; if you prefer to manage dependencies yourself or plan to extend the codebase.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Choose one path and follow it through to the end.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Wed, 15 Oct 2025 13:10:14 +0900</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
