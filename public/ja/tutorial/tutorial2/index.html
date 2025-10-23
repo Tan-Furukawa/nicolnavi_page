@@ -21,19 +21,117 @@
     見出しへのリンク
   
 
-Section 1 では、岩石の組織を定量化する方法を学びました。Section 2では、鉱物に注目し、鉱物内部の光学的異方性を可視化する方法を学びましょう。セクターゾーニングしているざくろ石の輪郭の抽出と、光学的異方性の可視化してみましょう。この方法は、ほかにも、波状消光など、単結晶の内部の光学的異方性をうまく表現することができます。">
+セクターゾーニングしたざくろ石（garnet）の顕微鏡動画を題材に、鉱物ごとの粒界抽出と光学的異方性の可視化手順を解説します。Tutorial 1 で学んだ基本操作を土台に、単結晶内部の消光挙動を強調するための設定変更や、鉱物ごとのラベル付与を実践します。
+
+  2. 前提条件
+  
+    
+    見出しへのリンク
+  
+
+
+NicolNavi アプリケーションが起動済みで、対象プロジェクトが開かれていること
+サンプル動画 nicolnavi_app/Examples/sector_zoning.avi を参照できること
+Tutorial 1 の操作（前処理・粒界抽出・ラベル付与）を一通り試していること
+
+
+  3. 操作フロー
+  
+    
+    見出しへのリンク
+  
+
+
+  3.1 動画ファイルの読み込み
+  
+    
+    見出しへのリンク
+  
+
+
+右画面の Select を押します。
+ファイル選択ダイアログで nicolnavi_app/Examples/sector_zoning.avi を選択し、開くを押します。
+左画面に動画の先頭フレームが幅 1000 px の正方形画像として表示されることを確認します。
+Start を押し、動画の離散化と回転中心推定を開始します。
+
+
+  3.2 回転中心の調整
+  
+    
+    見出しへのリンク
+  
+
+
+処理完了後、自動的に回転中心調整画面へ遷移します。
+
+
+
+このデータでは自動検出された中心が実際の同心円パターンから外れています。cx と cy をクリックし、赤い十字を実際の中心に合わせてください。
+
+
+図：中心を手動調整した状態
+
+調整後、Continue を押して回転中心を確定します。
+
+
+  3.3 解析マップと明度補正の確認
+  
+    
+    見出しへのリンク
+  
+
+
+画面遷移後に Image list を開き、代表的な解析マップを確認します。
+
+
+  
+      
+          マップ
+          説明
+      
+  
+  
+      
+          color
+          ステージ 1 回転中で最も明るい瞬間の色情報です。
+      
+      
+          extinction color
+          最も暗くなる瞬間の色情報です。完全な消光が得られない場合は前工程を見直してください。
+      
+      
+          R
+          各ピクセルのレタデーション値です。Video タブで指定したレタデーションを探索します。
+      
+      
+          extinction angle
+          各ピクセルの光消角マップです。
+      
+      
+          raw image
+          未加工の画像です。例えば phi = 22.5° を選ぶと、その回転角でのフレームを表示します。
+      
+  
+
+
+color と extinction color を切り替えると、color の方が暗く表示される場合があります。
+
+
+図：Image list が color のとき">
 <meta name="keywords" content="blog,developer,personal">
 
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Tutorial2 - 鉱物の抽出と可視化">
-  <meta name="twitter:description" content="1. 概要 見出しへのリンク Section 1 では、岩石の組織を定量化する方法を学びました。Section 2では、鉱物に注目し、鉱物内部の光学的異方性を可視化する方法を学びましょう。セクターゾーニングしているざくろ石の輪郭の抽出と、光学的異方性の可視化してみましょう。この方法は、ほかにも、波状消光など、単結晶の内部の光学的異方性をうまく表現することができます。">
+  <meta name="twitter:description" content="1. 概要 見出しへのリンク セクターゾーニングしたざくろ石（garnet）の顕微鏡動画を題材に、鉱物ごとの粒界抽出と光学的異方性の可視化手順を解説します。Tutorial 1 で学んだ基本操作を土台に、単結晶内部の消光挙動を強調するための設定変更や、鉱物ごとのラベル付与を実践します。
+2. 前提条件 見出しへのリンク NicolNavi アプリケーションが起動済みで、対象プロジェクトが開かれていること サンプル動画 nicolnavi_app/Examples/sector_zoning.avi を参照できること Tutorial 1 の操作（前処理・粒界抽出・ラベル付与）を一通り試していること 3. 操作フロー 見出しへのリンク 3.1 動画ファイルの読み込み 見出しへのリンク 右画面の Select を押します。 ファイル選択ダイアログで nicolnavi_app/Examples/sector_zoning.avi を選択し、開くを押します。 左画面に動画の先頭フレームが幅 1000 px の正方形画像として表示されることを確認します。 Start を押し、動画の離散化と回転中心推定を開始します。 3.2 回転中心の調整 見出しへのリンク 処理完了後、自動的に回転中心調整画面へ遷移します。 このデータでは自動検出された中心が実際の同心円パターンから外れています。cx と cy をクリックし、赤い十字を実際の中心に合わせてください。 図：中心を手動調整した状態 調整後、Continue を押して回転中心を確定します。 3.3 解析マップと明度補正の確認 見出しへのリンク 画面遷移後に Image list を開き、代表的な解析マップを確認します。 マップ 説明 color ステージ 1 回転中で最も明るい瞬間の色情報です。 extinction color 最も暗くなる瞬間の色情報です。完全な消光が得られない場合は前工程を見直してください。 R 各ピクセルのレタデーション値です。Video タブで指定したレタデーションを探索します。 extinction angle 各ピクセルの光消角マップです。 raw image 未加工の画像です。例えば phi = 22.5° を選ぶと、その回転角でのフレームを表示します。 color と extinction color を切り替えると、color の方が暗く表示される場合があります。 図：Image list が color のとき">
 
 <meta property="og:url" content="http://localhost:1313/ja/tutorial/tutorial2/">
   <meta property="og:site_name" content="NicolNavi">
   <meta property="og:title" content="Tutorial2 - 鉱物の抽出と可視化">
-  <meta property="og:description" content="1. 概要 見出しへのリンク Section 1 では、岩石の組織を定量化する方法を学びました。Section 2では、鉱物に注目し、鉱物内部の光学的異方性を可視化する方法を学びましょう。セクターゾーニングしているざくろ石の輪郭の抽出と、光学的異方性の可視化してみましょう。この方法は、ほかにも、波状消光など、単結晶の内部の光学的異方性をうまく表現することができます。">
+  <meta property="og:description" content="1. 概要 見出しへのリンク セクターゾーニングしたざくろ石（garnet）の顕微鏡動画を題材に、鉱物ごとの粒界抽出と光学的異方性の可視化手順を解説します。Tutorial 1 で学んだ基本操作を土台に、単結晶内部の消光挙動を強調するための設定変更や、鉱物ごとのラベル付与を実践します。
+2. 前提条件 見出しへのリンク NicolNavi アプリケーションが起動済みで、対象プロジェクトが開かれていること サンプル動画 nicolnavi_app/Examples/sector_zoning.avi を参照できること Tutorial 1 の操作（前処理・粒界抽出・ラベル付与）を一通り試していること 3. 操作フロー 見出しへのリンク 3.1 動画ファイルの読み込み 見出しへのリンク 右画面の Select を押します。 ファイル選択ダイアログで nicolnavi_app/Examples/sector_zoning.avi を選択し、開くを押します。 左画面に動画の先頭フレームが幅 1000 px の正方形画像として表示されることを確認します。 Start を押し、動画の離散化と回転中心推定を開始します。 3.2 回転中心の調整 見出しへのリンク 処理完了後、自動的に回転中心調整画面へ遷移します。 このデータでは自動検出された中心が実際の同心円パターンから外れています。cx と cy をクリックし、赤い十字を実際の中心に合わせてください。 図：中心を手動調整した状態 調整後、Continue を押して回転中心を確定します。 3.3 解析マップと明度補正の確認 見出しへのリンク 画面遷移後に Image list を開き、代表的な解析マップを確認します。 マップ 説明 color ステージ 1 回転中で最も明るい瞬間の色情報です。 extinction color 最も暗くなる瞬間の色情報です。完全な消光が得られない場合は前工程を見直してください。 R 各ピクセルのレタデーション値です。Video タブで指定したレタデーションを探索します。 extinction angle 各ピクセルの光消角マップです。 raw image 未加工の画像です。例えば phi = 22.5° を選ぶと、その回転角でのフレームを表示します。 color と extinction color を切り替えると、color の方が暗く表示される場合があります。 図：Image list が color のとき">
   <meta property="og:locale" content="ja">
   <meta property="og:type" content="article">
     <meta property="article:section" content="tutorial">
@@ -184,7 +282,175 @@ Section 1 では、岩石の組織を定量化する方法を学びました。S
     <span class="sr-only">見出しへのリンク</span>
   </a>
 </h2>
-<p>Section 1 では、岩石の組織を定量化する方法を学びました。Section 2では、鉱物に注目し、鉱物内部の光学的異方性を可視化する方法を学びましょう。セクターゾーニングしているざくろ石の輪郭の抽出と、光学的異方性の可視化してみましょう。この方法は、ほかにも、波状消光など、単結晶の内部の光学的異方性をうまく表現することができます。</p>
+<p>セクターゾーニングしたざくろ石（garnet）の顕微鏡動画を題材に、鉱物ごとの粒界抽出と光学的異方性の可視化手順を解説します。Tutorial 1 で学んだ基本操作を土台に、単結晶内部の消光挙動を強調するための設定変更や、鉱物ごとのラベル付与を実践します。</p>
+<h2 id="2-前提条件">
+  2. 前提条件
+  <a class="heading-link" href="#2-%e5%89%8d%e6%8f%90%e6%9d%a1%e4%bb%b6">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h2>
+<ul>
+<li>NicolNavi アプリケーションが起動済みで、対象プロジェクトが開かれていること</li>
+<li>サンプル動画 <code>nicolnavi_app/Examples/sector_zoning.avi</code> を参照できること</li>
+<li>Tutorial 1 の操作（前処理・粒界抽出・ラベル付与）を一通り試していること</li>
+</ul>
+<h2 id="3-操作フロー">
+  3. 操作フロー
+  <a class="heading-link" href="#3-%e6%93%8d%e4%bd%9c%e3%83%95%e3%83%ad%e3%83%bc">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h2>
+<h3 id="31-動画ファイルの読み込み">
+  3.1 動画ファイルの読み込み
+  <a class="heading-link" href="#31-%e5%8b%95%e7%94%bb%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%81%ae%e8%aa%ad%e3%81%bf%e8%be%bc%e3%81%bf">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li>右画面の <code>Select</code> を押します。</li>
+<li>ファイル選択ダイアログで <code>nicolnavi_app/Examples/sector_zoning.avi</code> を選択し、開くを押します。</li>
+<li>左画面に動画の先頭フレームが幅 1000 px の正方形画像として表示されることを確認します。</li>
+<li><code>Start</code> を押し、動画の離散化と回転中心推定を開始します。</li>
+</ol>
+<h3 id="32-回転中心の調整">
+  3.2 回転中心の調整
+  <a class="heading-link" href="#32-%e5%9b%9e%e8%bb%a2%e4%b8%ad%e5%bf%83%e3%81%ae%e8%aa%bf%e6%95%b4">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li>処理完了後、自動的に回転中心調整画面へ遷移します。</li>
+</ol>
+<img src="/images/page/tutorial/tutorial2/pic1.png" style="width: 100%;">
+<ol start="2">
+<li>このデータでは自動検出された中心が実際の同心円パターンから外れています。<code>cx</code> と <code>cy</code> をクリックし、赤い十字を実際の中心に合わせてください。</li>
+</ol>
+<img src="/images/page/tutorial/tutorial2/pic2.png" style="width: 100%;">
+図：中心を手動調整した状態
+<ol start="3">
+<li>調整後、<code>Continue</code> を押して回転中心を確定します。</li>
+</ol>
+<h3 id="33-解析マップと明度補正の確認">
+  3.3 解析マップと明度補正の確認
+  <a class="heading-link" href="#33-%e8%a7%a3%e6%9e%90%e3%83%9e%e3%83%83%e3%83%97%e3%81%a8%e6%98%8e%e5%ba%a6%e8%a3%9c%e6%ad%a3%e3%81%ae%e7%a2%ba%e8%aa%8d">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li>画面遷移後に <code>Image list</code> を開き、代表的な解析マップを確認します。</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th>マップ</th>
+          <th>説明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>color</code></td>
+          <td>ステージ 1 回転中で最も明るい瞬間の色情報です。</td>
+      </tr>
+      <tr>
+          <td><code>extinction color</code></td>
+          <td>最も暗くなる瞬間の色情報です。完全な消光が得られない場合は前工程を見直してください。</td>
+      </tr>
+      <tr>
+          <td><code>R</code></td>
+          <td>各ピクセルのレタデーション値です。<code>Video</code> タブで指定したレタデーションを探索します。</td>
+      </tr>
+      <tr>
+          <td><code>extinction angle</code></td>
+          <td>各ピクセルの光消角マップです。</td>
+      </tr>
+      <tr>
+          <td><code>raw image</code></td>
+          <td>未加工の画像です。例えば <code>phi = 22.5°</code> を選ぶと、その回転角でのフレームを表示します。</td>
+      </tr>
+  </tbody>
+</table>
+<ol start="2">
+<li><code>color</code> と <code>extinction color</code> を切り替えると、<code>color</code> の方が暗く表示される場合があります。</li>
+</ol>
+<img src="/images/page/tutorial/tutorial2/pic3.png" style="width: 80%;">
+<p>図：<code>Image list</code> が <code>color</code> のとき</p>
+<img src="/images/page/tutorial/tutorial2/pic4.png" style="width: 80%;">
+<p>図：<code>Image list</code> が <code>extinction color</code> のとき</p>
+<ol start="3">
+<li>この現象は、撮影時に画素が飽和していると <code>color</code> の明度が過小評価されるために発生します。<code>color</code> では既定で <strong>brightness correction</strong> が有効になっており、各座標で最も明るい明度を <code>B1</code>、最も暗い明度を <code>B2</code> とすると、表示値は <code>B1 - B2</code> です。画素が飽和すると <code>B1</code> と <code>B2</code> の差がほぼ 0 になり、結果的に暗く見えてしまいます。</li>
+<li>飽和が疑われる場合は、右画面の <strong>brightness correction</strong> チェックボックスをオフにして、<code>color</code> を <code>B1</code> のみで表示します。</li>
+</ol>
+<img src="/images/page/tutorial/tutorial2/pic5.png" style="width: 80%;">
+<h3 id="34-粒界抽出の実行">
+  3.4 粒界抽出の実行
+  <a class="heading-link" href="#34-%e7%b2%92%e7%95%8c%e6%8a%bd%e5%87%ba%e3%81%ae%e5%ae%9f%e8%a1%8c">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li><strong>brightness correction</strong> の設定を確認したら、<code>Detect Grain Boundary</code> を押して粒界の初期推定結果を表示します。</li>
+<li><code>median filter</code> や <code>parameters</code> を必要に応じて調整します。今回は <code>boundary connectivity</code> を 5 に変更しました。</li>
+<li><code>Calculate grain boundaries</code> を再度押し、調整結果を反映します。</li>
+<li>粒界が意図どおりになったら、<code>Continue</code> を押してラベル付与画面へ進みます。</li>
+</ol>
+<img src="/images/page/tutorial/tutorial2/pic6.png" style="width: 30%;">
+<h3 id="35-鉱物ラベルの付与">
+  3.5 鉱物ラベルの付与
+  <a class="heading-link" href="#35-%e9%89%b1%e7%89%a9%e3%83%a9%e3%83%99%e3%83%ab%e3%81%ae%e4%bb%98%e4%b8%8e">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li>パラメータ欄の <code>Label Name</code> に <code>garnet</code> を入力し、<code>+</code> を押します。同様に <code>inclusion</code>、<code>matrix</code> も追加します。</li>
+<li>ラベル一覧から <code>garnet</code> を選択し、ざくろ石に該当する粒子を左画面でクリックして教師データを追加します。</li>
+<li><code>inclusion</code> と <code>matrix</code> も同様に、該当する領域を 5～10 個ずつ目安にラベル付けします。</li>
+<li>誤判定が多い場合はラベルの追加を繰り返し、結果が安定したら <code>Done</code> を押してラベル設定を確定します。今回の例では合計 48 粒子を教師データとして指定しました。</li>
+</ol>
+<img src="/images/page/tutorial/tutorial2/pic7.png" style="width: 100%;">
+<h3 id="36-光学的異方性の可視化">
+  3.6 光学的異方性の可視化
+  <a class="heading-link" href="#36-%e5%85%89%e5%ad%a6%e7%9a%84%e7%95%b0%e6%96%b9%e6%80%a7%e3%81%ae%e5%8f%af%e8%a6%96%e5%8c%96">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h3>
+<ol>
+<li><code>Analysis</code> タブに切り替え、<code>inclusion</code> と <code>matrix</code> のチェックを外してざくろ石のみを表示します。</li>
+</ol>
+<img src="/images/page/tutorial/tutorial2/pic8.png" style="width: 30%;">
+<ol start="2">
+<li><code>map</code> タブに戻り、<code>image list</code> から <code>extinction angle</code> を選択します。選択した鉱物以外は黒く表示され、ざくろ石内部のセクターゾーニングが強調されます。</li>
+</ol>
+<img src="/images/page/tutorial/tutorial2/pic9.png" style="width: 100%;">
+<ol start="3">
+<li>必要に応じて画面上部のメニューから <code>Save as PDF</code> を選択し、可視化結果を PDF として保存します。</li>
+</ol>
+<div class="notice info">
+  <div class="notice-title">
+    <i class="fa-solid fa-exclamation-circle" aria-hidden="true"></i>Info
+  </div>
+  <div class="notice-content">異方性の可視化は、波状消光を示す単結晶や包有物の優先配列の確認にも有効です。鉱物ごとのラベルを適切に整理しておくと、再解析や共有が容易になります。</div>
+</div>
+
+<h2 id="4-まとめ">
+  4. まとめ
+  <a class="heading-link" href="#4-%e3%81%be%e3%81%a8%e3%82%81">
+    <i class="fa-solid fa-link" aria-hidden="true" title="見出しへのリンク"></i>
+    <span class="sr-only">見出しへのリンク</span>
+  </a>
+</h2>
+<ul>
+<li>画素飽和が疑われる場合は <strong>brightness correction</strong> を無効化し、<code>color</code> の明度を補正してください。</li>
+<li>粒界抽出は <code>boundary connectivity</code> などのパラメータ調整で精度が大きく変わります。結果を都度確認しながら設定を詰めましょう。</li>
+<li>鉱物ラベルを正確に付与すると、<code>extinction angle</code> などのマップを鉱物別に抽出でき、光学的異方性の解釈が容易になります。</li>
+</ul>
 
   </article>
 </section>

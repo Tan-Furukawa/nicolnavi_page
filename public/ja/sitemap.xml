@@ -41,13 +41,13 @@
                 href="http://localhost:1313/ja/about/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ja/tutorial/tutorial1/</loc>
+    <lastmod>2025-10-15T13:10:14+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/ja/tutorial/tutorial2/</loc>
     <lastmod>2025-10-15T13:10:14+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ja/tutorial/tutorial3/</loc>
-    <lastmod>2025-10-15T13:10:14+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ja/tutorial/tutorial1/</loc>
     <lastmod>2025-10-15T13:10:14+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ja/tutorial/</loc>
