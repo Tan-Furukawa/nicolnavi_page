@@ -382,10 +382,21 @@ color と extinction color を切り替えると、color の方が暗く表示�
 <img src="/images/page/tutorial/tutorial2/pic4.png" style="width: 80%;">
 <p>図：<code>Image list</code> が <code>extinction color</code> のとき</p>
 <ol start="3">
-<li>この現象は、撮影時に画素が飽和していると <code>color</code> の明度が過小評価されるために発生します。<code>color</code> では既定で <strong>brightness correction</strong> が有効になっており、各座標で最も明るい明度を <code>B1</code>、最も暗い明度を <code>B2</code> とすると、表示値は <code>B1 - B2</code> です。画素が飽和すると <code>B1</code> と <code>B2</code> の差がほぼ 0 になり、結果的に暗く見えてしまいます。</li>
-<li>飽和が疑われる場合は、右画面の <strong>brightness correction</strong> チェックボックスをオフにして、<code>color</code> を <code>B1</code> のみで表示します。</li>
+<li>
+<p><code>color</code> では既定で <strong>brightness correction</strong> が有効になっており、各座標 <code>(x, y)</code> について一回転中の最大明度を \(B_{\max}(x, y)\)、最小明度を \(B_{\min}(x, y)\) とすると、表示値は</p>
+\[
+   I_{\text{corr}}(x, y) = B_{\max}(x, y) - B_{\min}(x, y)
+   \]<p>として計算されます。画像の干渉色をより正しい色調で表現するために行われる処理です。しかし、撮影時に画素が飽和すると \(B_{\max}(x, y) \approx B_{\min}(x, y)\) となり、<code>color</code> の明度が過小評価されて暗く見えます。</p>
+</li>
+<li>
+<p>飽和が疑われる場合は右画面の <strong>brightness correction</strong> チェックボックスをオフにし、</p>
+\[
+   I_{\text{corr}}(x, y) = B_{\max}(x, y)
+   \]<p>をそのまま表示して明度を確認します。</p>
+</li>
 </ol>
 <img src="/images/page/tutorial/tutorial2/pic5.png" style="width: 80%;">
+<p>図：<code>Image list</code> が <code>color</code> で、<code>brightness correction</code>のチェックを外したとき</p>
 <h3 id="34-粒界抽出の実行">
   3.4 粒界抽出の実行
   <a class="heading-link" href="#34-%e7%b2%92%e7%95%8c%e6%8a%bd%e5%87%ba%e3%81%ae%e5%ae%9f%e8%a1%8c">
@@ -436,7 +447,7 @@ color と extinction color を切り替えると、color の方が暗く表示�
   <div class="notice-title">
     <i class="fa-solid fa-exclamation-circle" aria-hidden="true"></i>Info
   </div>
-  <div class="notice-content">異方性の可視化は、波状消光を示す単結晶や包有物の優先配列の確認にも有効です。鉱物ごとのラベルを適切に整理しておくと、再解析や共有が容易になります。</div>
+  <div class="notice-content">光学異方性の可視化は、波状消光を示す単結晶にも有効です。</div>
 </div>
 
 <h2 id="4-まとめ">
@@ -448,8 +459,7 @@ color と extinction color を切り替えると、color の方が暗く表示�
 </h2>
 <ul>
 <li>画素飽和が疑われる場合は <strong>brightness correction</strong> を無効化し、<code>color</code> の明度を補正してください。</li>
-<li>粒界抽出は <code>boundary connectivity</code> などのパラメータ調整で精度が大きく変わります。結果を都度確認しながら設定を詰めましょう。</li>
-<li>鉱物ラベルを正確に付与すると、<code>extinction angle</code> などのマップを鉱物別に抽出でき、光学的異方性の解釈が容易になります。</li>
+<li>鉱物ラベルを正確に付与すると、<code>extinction angle</code> などのマップを鉱物別に抽出でき、鉱物を適切な形状で切り抜いて可視化することが可能になります。</li>
 </ul>
 
   </article>

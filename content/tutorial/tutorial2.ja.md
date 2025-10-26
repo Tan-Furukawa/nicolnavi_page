@@ -53,10 +53,25 @@ title = 'Tutorial2 - 鉱物の抽出と可視化'
 
 図：`Image list` が `extinction color` のとき
 
-3. この現象は、撮影時に画素が飽和していると `color` の明度が過小評価されるために発生します。`color` では既定で **brightness correction** が有効になっており、各座標で最も明るい明度を `B1`、最も暗い明度を `B2` とすると、表示値は `B1 - B2` です。画素が飽和すると `B1` と `B2` の差がほぼ 0 になり、結果的に暗く見えてしまいます。
-4. 飽和が疑われる場合は、右画面の **brightness correction** チェックボックスをオフにして、`color` を `B1` のみで表示します。
+3. `color` では既定で **brightness correction** が有効になっており、各座標 `(x, y)` について一回転中の最大明度を \(B_{\max}(x, y)\)、最小明度を \(B_{\min}(x, y)\) とすると、表示値は
+
+   \[
+   I_{\text{corr}}(x, y) = B_{\max}(x, y) - B_{\min}(x, y)
+   \]
+
+   として計算されます。画像の干渉色をより正しい色調で表現するために行われる処理です。しかし、撮影時に画素が飽和すると \(B_{\max}(x, y) \approx B_{\min}(x, y)\) となり、`color` の明度が過小評価されて暗く見えます。
+
+4. 飽和が疑われる場合は右画面の **brightness correction** チェックボックスをオフにし、
+
+   \[
+   I_{\text{corr}}(x, y) = B_{\max}(x, y)
+   \]
+
+   をそのまま表示して明度を確認します。
 
 <img src="/images/page/tutorial/tutorial2/pic5.png" style="width: 80%;">
+
+図：`Image list` が `color` で、`brightness correction`のチェックを外したとき
 
 ### 3.4 粒界抽出の実行
 1. **brightness correction** の設定を確認したら、`Detect Grain Boundary` を押して粒界の初期推定結果を表示します。
@@ -86,13 +101,11 @@ title = 'Tutorial2 - 鉱物の抽出と可視化'
 3. 必要に応じて画面上部のメニューから `Save as PDF` を選択し、可視化結果を PDF として保存します。
 
 {{< notice info >}}
-異方性の可視化は、波状消光を示す単結晶や包有物の優先配列の確認にも有効です。鉱物ごとのラベルを適切に整理しておくと、再解析や共有が容易になります。
+光学異方性の可視化は、波状消光を示す単結晶にも有効です。
 {{< /notice >}}
 
 ## 4. まとめ
 - 画素飽和が疑われる場合は **brightness correction** を無効化し、`color` の明度を補正してください。
-- 粒界抽出は `boundary connectivity` などのパラメータ調整で精度が大きく変わります。結果を都度確認しながら設定を詰めましょう。
-- 鉱物ラベルを正確に付与すると、`extinction angle` などのマップを鉱物別に抽出でき、光学的異方性の解釈が容易になります。
-
+- 鉱物ラベルを正確に付与すると、`extinction angle` などのマップを鉱物別に抽出でき、鉱物を適切な形状で切り抜いて可視化することが可能になります。
 
 
