@@ -4,7 +4,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <title>
-  Tutorial2 - 鉱物の抽出と可視化 · NicolNavi
+  Tutorial2 - 鉱物の抽出と可視化 · NicoNicoNnavi
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
 
 
 
-<meta name="author" content="NicolNavi">
+<meta name="author" content="NicoNavi">
 <meta name="description" content="
   1. 概要
   
@@ -128,7 +128,7 @@ color と extinction color を切り替えると、color の方が暗く表示�
 2. 前提条件 見出しへのリンク NicolNavi アプリケーションが起動済みで、対象プロジェクトが開かれていること サンプル動画 nicolnavi_app/Examples/sector_zoning.avi を参照できること Tutorial 1 の操作（前処理・粒界抽出・ラベル付与）を一通り試していること 3. 操作フロー 見出しへのリンク 3.1 動画ファイルの読み込み 見出しへのリンク 右画面の Select を押します。 ファイル選択ダイアログで nicolnavi_app/Examples/sector_zoning.avi を選択し、開くを押します。 左画面に動画の先頭フレームが幅 1000 px の正方形画像として表示されることを確認します。 Start を押し、動画の離散化と回転中心推定を開始します。 3.2 回転中心の調整 見出しへのリンク 処理完了後、自動的に回転中心調整画面へ遷移します。 このデータでは自動検出された中心が実際の同心円パターンから外れています。cx と cy をクリックし、赤い十字を実際の中心に合わせてください。 図：中心を手動調整した状態 調整後、Continue を押して回転中心を確定します。 3.3 解析マップと明度補正の確認 見出しへのリンク 画面遷移後に Image list を開き、代表的な解析マップを確認します。 マップ 説明 color ステージ 1 回転中で最も明るい瞬間の色情報です。 extinction color 最も暗くなる瞬間の色情報です。完全な消光が得られない場合は前工程を見直してください。 R 各ピクセルのレタデーション値です。Video タブで指定したレタデーションを探索します。 extinction angle 各ピクセルの光消角マップです。 raw image 未加工の画像です。例えば phi = 22.5° を選ぶと、その回転角でのフレームを表示します。 color と extinction color を切り替えると、color の方が暗く表示される場合があります。 図：Image list が color のとき">
 
 <meta property="og:url" content="http://localhost:1313/ja/tutorial/tutorial2/">
-  <meta property="og:site_name" content="NicolNavi">
+  <meta property="og:site_name" content="NicoNicoNnavi">
   <meta property="og:title" content="Tutorial2 - 鉱物の抽出と可視化">
   <meta property="og:description" content="1. 概要 見出しへのリンク セクターゾーニングしたざくろ石（garnet）の顕微鏡動画を題材に、鉱物ごとの粒界抽出と光学的異方性の可視化手順を解説します。Tutorial 1 で学んだ基本操作を土台に、単結晶内部の消光挙動を強調するための設定変更や、鉱物ごとのラベル付与を実践します。
 2. 前提条件 見出しへのリンク NicolNavi アプリケーションが起動済みで、対象プロジェクトが開かれていること サンプル動画 nicolnavi_app/Examples/sector_zoning.avi を参照できること Tutorial 1 の操作（前処理・粒界抽出・ラベル付与）を一通り試していること 3. 操作フロー 見出しへのリンク 3.1 動画ファイルの読み込み 見出しへのリンク 右画面の Select を押します。 ファイル選択ダイアログで nicolnavi_app/Examples/sector_zoning.avi を選択し、開くを押します。 左画面に動画の先頭フレームが幅 1000 px の正方形画像として表示されることを確認します。 Start を押し、動画の離散化と回転中心推定を開始します。 3.2 回転中心の調整 見出しへのリンク 処理完了後、自動的に回転中心調整画面へ遷移します。 このデータでは自動検出された中心が実際の同心円パターンから外れています。cx と cy をクリックし、赤い十字を実際の中心に合わせてください。 図：中心を手動調整した状態 調整後、Continue を押して回転中心を確定します。 3.3 解析マップと明度補正の確認 見出しへのリンク 画面遷移後に Image list を開き、代表的な解析マップを確認します。 マップ 説明 color ステージ 1 回転中で最も明るい瞬間の色情報です。 extinction color 最も暗くなる瞬間の色情報です。完全な消光が得られない場合は前工程を見直してください。 R 各ピクセルのレタデーション値です。Video タブで指定したレタデーションを探索します。 extinction angle 各ピクセルの光消角マップです。 raw image 未加工の画像です。例えば phi = 22.5° を選ぶと、その回転角でのフレームを表示します。 color と extinction color を切り替えると、color の方が暗く表示される場合があります。 図：Image list が color のとき">
@@ -210,7 +210,7 @@ color と extinction color を切り替えると、color の方が暗く表示�
   <section class="container">
     
     <a class="navigation-title" href="http://localhost:1313/ja/">
-      NicolNavi
+      NicoNicoNnavi
     </a>
     
     
@@ -474,7 +474,7 @@ color と extinction color を切り替えると、color の方が暗く表示�
     ©
     
     2025
-     NicolNavi 
+     NicoNavi 
     ·
     
     Powered by 

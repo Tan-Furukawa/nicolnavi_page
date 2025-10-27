@@ -1,5 +1,5 @@
 baseurl = "http://www.example.com"
-title = "NicolNavi"
+title = "NicoNicoNnavi"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
@@ -16,7 +16,7 @@ shortname = "yourdiscussshortname"
 style = "github-dark"
 
 [params]
-  author = "NicolNavi"
+  author = "NicoNavi"
   info = "For Quantitative Analysis of Micorostructure Using a Polarizing Microscope"
   description = "John Doe's personal website"
   keywords = "blog,developer,personal"
