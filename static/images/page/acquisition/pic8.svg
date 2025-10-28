@@ -7,8 +7,8 @@
    viewBox="0 0 1107.4247 875.38422"
    version="1.1"
    id="svg41595"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    sodipodi:docname="pic8.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -28,12 +28,12 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.13291485"
-     inkscape:cx="2057.7084"
+     inkscape:cx="2053.9466"
      inkscape:cy="1899.7125"
      inkscape:window-width="1488"
      inkscape:window-height="752"
-     inkscape:window-x="732"
-     inkscape:window-y="127"
+     inkscape:window-x="190"
+     inkscape:window-y="401"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -322,7 +322,7 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect30005)"><tspan
            x="-3520"
            y="4668.8241"
-           id="tspan43046">a.</tspan></text>
+           id="tspan43275">a.</tspan></text>
     </g>
     <g
        id="g36287"
@@ -434,7 +434,7 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect30005-9)"><tspan
            x="-3520"
            y="4668.8241"
-           id="tspan43048">b.</tspan></text>
+           id="tspan43277">b.</tspan></text>
     </g>
     <g
        id="g36316"
@@ -581,33 +581,33 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect30005-9-2)"><tspan
            x="-3520"
            y="4668.8241"
-           id="tspan43050">c.</tspan></text>
+           id="tspan43279">c.</tspan></text>
     </g>
     <g
-       id="g36345"
-       transform="translate(483.37099,-1591.573)">
+       id="g43112"
+       transform="translate(-7.4083337,0.52916667)">
       <ellipse
          style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="path23438-5-8"
-         cx="-160.11775"
-         cy="1512.6631"
+         cx="323.25323"
+         cy="-78.909912"
          rx="200.47989"
          ry="80.953972" />
       <ellipse
          style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="path23438-56"
-         cx="-160.58223"
-         cy="1507.2197"
+         cx="322.78876"
+         cy="-84.353271"
          rx="200.47989"
          ry="80.953972" />
       <path
          style="fill:none;stroke:#000000;stroke-width:3.7485;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-8-28-5-0)"
-         d="m -372.41338,1551.3916 c 16.07705,47.2596 67.98555,43.5435 92.21457,44.097"
+         d="m 110.95761,-40.1814 c 16.07705,47.2596 67.98555,43.5435 92.21457,44.097"
          id="path4237-8-7-2-2"
          sodipodi:nodetypes="cc" />
       <g
          id="g147073-2-1-9-5"
-         transform="matrix(4.9372547,0,0,4.9372547,163.85396,1979.4466)">
+         transform="matrix(4.9372547,0,0,4.9372547,647.22495,387.8736)">
         <rect
            style="fill:#fcfdfd;fill-opacity:1;stroke:#fefefe;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
            id="rect146295-0-7-1-2"
@@ -627,35 +627,35 @@
       <ellipse
          style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
          id="path24662-9"
-         cx="-162.38289"
-         cy="1499.327"
+         cx="320.9881"
+         cy="-92.245972"
          rx="29.462902"
          ry="9.8209677" />
       <path
          style="fill:#dde9af;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m -287.62006,1524 h 84.66666 l 47.62501,-74.0833 h -84.66667 z"
+         d="m 195.75093,-67.573 h 84.66666 l 47.62501,-74.0833 h -84.66667 z"
          id="path5891-0-9-2" />
       <path
          style="fill:#dde9af;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m -155.32839,1465.7917 v -15.875 L -202.9534,1524 v 15.875 z"
+         d="m 328.0426,-125.7813 v -15.875 l -47.62501,74.0833 v 15.875 z"
          id="path6024-6-6-0" />
       <path
          style="fill:#dde9af;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m -202.95339,1524 c 0,15.875 0,15.875 0,15.875 h -84.66667 V 1524 h 84.66667"
+         d="m 280.4176,-67.573 c 0,15.875 0,15.875 0,15.875 h -84.66667 v -15.875 h 84.66667"
          id="path6470-4-4-6" />
       <path
          style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m -239.99506,1511.8292 120.1208,0.529 31.750001,-52.9166 -118.533291,1.0583 z"
+         d="m 243.37593,-79.7438 120.1208,0.529 31.75,-52.9166 -118.53329,1.0583 z"
          id="path6126-80-4"
          sodipodi:nodetypes="ccccc" />
       <path
          style="fill:#828282;fill-opacity:0.75202;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m -239.46593,1509.7124 120.1208,0.5291 31.750001,-52.9166 -118.533281,1.0584 z"
+         d="m 243.90506,-81.8606 120.1208,0.5291 31.75,-52.9166 -118.53328,1.0584 z"
          id="path6126-80-7-3"
          sodipodi:nodetypes="ccccc" />
       <g
          id="g8876-3"
-         transform="translate(147.88402,692.1499)"
+         transform="translate(631.25501,-899.4231)"
          style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            style="fill:#ffaaaa;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -682,57 +682,57 @@
       <text
          xml:space="preserve"
          style="font-weight:bold;font-size:8.46667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
-         x="-221.98248"
-         y="1487.6252"
+         x="261.38852"
+         y="-103.94775"
          id="text9628-5"><tspan
            sodipodi:role="line"
            id="tspan9626-1"
            style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
-           x="-221.98248"
-           y="1487.6252">Weight</tspan></text>
+           x="261.38852"
+           y="-103.94775">Weight</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:3.82503;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 39.683493,1510.3247 H 23.952301"
+         d="M 523.05448,-81.2483 H 507.32329"
          id="path6836-0-6-3" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.5766px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.04874"
-         x="1.6191304"
-         y="1518.8333"
+         x="484.99011"
+         y="-72.739746"
          id="text7713-3-1-1"><tspan
            sodipodi:role="line"
            id="tspan8143-5-1-52"
-           x="1.6191304"
-           y="1518.8333"
+           x="484.99011"
+           y="-72.739746"
            style="stroke-width:1.04874">0°</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:2.23953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Mstart-3-5-6)"
-         d="m 46.356573,1511.9792 22.33756,-0.4451"
+         d="m 529.72756,-79.5938 22.33756,-0.4451"
          id="path27138-1-4-6"
          sodipodi:nodetypes="cc" />
       <text
          xml:space="preserve"
          style="font-weight:bold;font-size:31.4277px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:0.982114"
-         x="-241.37373"
-         y="1398.1466"
+         x="241.99725"
+         y="-193.42639"
          id="text26154-9"><tspan
            sodipodi:role="line"
            id="tspan26152-4"
            style="stroke-width:0.982114"
-           x="-241.37373"
-           y="1398.1466">XPL +λ-Plate</tspan></text>
+           x="241.99725"
+           y="-193.42639">XPL +λ-Plate</tspan></text>
       <text
          xml:space="preserve"
-         transform="matrix(2.4198967,0,0,2.4198967,8166.0449,-9878.6598)"
+         transform="matrix(2.4198967,0,0,2.4198967,8634.0691,-11470.233)"
          id="text30003-0-4-6"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect30005-9-2-7)"><tspan
            x="-3520"
            y="4668.8241"
-           id="tspan43052">d.</tspan></text>
+           id="tspan43281">d.</tspan></text>
     </g>
     <g
        id="g36375"
-       transform="translate(483.37099,-1591.573)">
+       transform="translate(492.21064,-1591.573)">
       <ellipse
          style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="path23438-5-5"
@@ -882,7 +882,7 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect30005-9-2-7-1)"><tspan
            x="-3520"
            y="4668.8241"
-           id="tspan43054">e.</tspan></text>
+           id="tspan43283">e.</tspan></text>
     </g>
   </g>
 </svg>
